@@ -1,0 +1,237 @@
+<!doctype html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>University of Cambridge</title>
+		<link rel="icon" href="https://pbs.twimg.com/profile_images/1371469532771069952/YZIXAXgn_400x400.jpg" type="image/icon type">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="uk-md2.css">
+		<script src="https://kit.fontawesome.com/47419e189a.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<nav>
+			<h1><img class="logo" src="https://i.pinimg.com/564x/db/e2/c5/dbe2c56936f8078dee2f41549afa60fb.jpg"> EduKeens</h1>
+			<ul>
+				<li><a href="page1.html">Home</a></li>
+				<li><a href="pag1.html">About</a></li>
+			</ul>
+		</nav>
+
+		<!--<h1><img class="image" src="https://www.cmu.edu/brand/brand-guidelines/images/seal-4c-600x600-min.jpg" width="120px" height="100px"><span>Carnegie Mellon University</span></h1>-->
+
+		<img class="image" src="https://pbs.twimg.com/profile_images/1371469532771069952/YZIXAXgn_400x400.jpg" width="120px" height="100px"><span>&ensp;University of Cambridge
+
+		<div class="sidenav">
+			<ul>
+				<li class="title">Contents</li>
+				
+				<li><a href="#history">History</a></li>
+				<li><a href="#rankings">Rankings</a></li>
+				<li><a href="#campus">Campus</a></li>
+				<li><a href="#course">Courses</a></li>
+				<li><a href="#admission">Admission</a></li>
+
+			</ul>
+		</div>
+
+
+
+
+
+
+		<h2 class="subheading1">History of University of Cambridge,School of Medicine</h2>
+		<div id="history" class="main">The MD degree – on a par academically with the PhD – is aimed at medically qualified clinicians working in Cambridge who hold suitable research appointments within Cambridge University Health Partners (ie the University of Cambridge, Cambridge University Hospitals NHS Foundation Trust, Cambridgeshire and Peterborough NHS Foundation Trust, and Papworth Hospital NHS Foundation Trust).  </div>
+
+		
+
+		</div>
+		<h3 id = "rankings" class="h3" style="font-size: 36px;">Rankings: </h3>
+		<p class="h4" style="font-size: 32px;">According to the research:</p>
+		<ul style="list-style-type: square; text-align: left; font-size: 20px; margin-top: 50px;">
+			<div class="ranki" style="margin-left: 300px; font-size: 30px;">
+			<li > Cambridge Medical School should be at the top of your list of universities </li>
+			<li>It has a great medical course</li>
+			<li >Highly reputable</li>
+			<li >Has a score of 94.1/100 by QS university rankings</li>
+			
+		</ul>
+	</div>
+			
+		
+		
+
+
+		<h4 class="subheading2" >Campus of Cambridge University</h4>
+		<div id="campus" class="belowmain"> The university occupies a central location within the city of Cambridge, with the students taking up a significant proportion (nearly 20%) of the town's population and heavily affecting the age structure.[49] Most of the older colleges are situated nearby the city centre and river Cam, along which it is traditional to punt to appreciate the buildings and surroundings.
+         <br><br><br>
+
+
+
+
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+					<!--<div class="text">One</div>-->
+					<img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Clinical_school.JPG" width="1000" height="600">
+			</div>
+			<div class="mySlides fade">
+					<!--<div class="text">Two</div>-->
+					<img src="https://www.biology.cam.ac.uk/sites/www.biology.cam.ac.uk/files/styles/leading/public/media/cambridge-university-day-4-17-590x288px.jpg?itok=rJWAOnln" width="1000" height="600">
+			</div>
+			<div class="mySlides fade">
+					<!--<div class="text">Three</div>-->
+				<img src="https://img.emg-services.net/institutes/institute9950/uoft-header.jpg" width="1000" height="600">
+			</div>
+			<div class="mySlides fade">
+					<!--<div class="text">Three</div>-->
+				<img src="https://www.applytocambridge.com/assets/images/hero/medicine.jpg" width="1000" height="600">
+			</div>
+			<div class="mySlides fade">
+					<!--<div class="text">Three</div>-->
+				<img src="https://images.shiksha.com/mediadata/images/1533548656phpAx2Tdq.jpeg" width="1000" height="600">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<div style="text-align:center">
+  			<span class="dot" onclick="currentSlide(1)"></span> 
+  			<span class="dot" onclick="currentSlide(2)"></span> 
+  			<span class="dot" onclick="currentSlide(3)"></span> 
+  			<span class="dot" onclick="currentSlide(4)"></span>
+  			<span class="dot" onclick="currentSlide(5)"></span>
+		</div>
+
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+  				showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+  					showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+  				var i;
+  				var slides = document.getElementsByClassName("mySlides");
+  				var dots = document.getElementsByClassName("dot");
+  				if (n > slides.length) {slideIndex = 1}
+  				if (n < 1) {slideIndex = slides.length}
+  				for (i = 0; i < slides.length; i++) {
+      				slides[i].style.display = "none";
+  				}
+  				for (i = 0; i < dots.length; i++) {
+      				dots[i].className = dots[i].className.replace(" active", "");
+  				}
+  				slides[slideIndex-1].style.display = "block";
+  				dots[slideIndex-1].className += " active";
+				}
+			</script>
+
+
+			<div class="belowmain">The School of Clinical Medicine is the medical school of the University of Cambridge in England. According to the QS World University Rankings 2020, it ranks as the 3rd best medical school in the world. </div><br><br><br>
+
+
+			<div class="row">
+  				<div class="column">
+    				<div class="card flip-card">
+    					<div class="flip-card-inner">
+    						<div class="flip-card-front">
+    							<img src="https://www.undergraduate.study.cam.ac.uk/sites/www.undergraduate.study.cam.ac.uk/files/styles/leading/public/medicine.jpg?itok=3_-CjPEl" alt="Avatar" style="width:300px;height:200px;">
+    							Student Life
+    						</div>
+    						<div class="flip-card-back">
+    							<br>Students have opportunities to pursue research and project work throughout the course. 
+    						</div>
+    					</div>
+    				</div>
+  				</div>
+				  
+  				<div class="column">
+    				<div class="card flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img src="https://images.squarespace-cdn.com/content/v1/521b88b9e4b024f66a58adf9/1439848022163-LR8TFIXTIT4QJ99YBNP8/6868008018_f298f018a5_o.jpg?format=1500w" alt="c2" style="width:300px;height:200px;">
+								Training
+							</div>
+							<div class="flip-card-back">
+								<br>Approximately half of clinical training in Cambridge takes place at the Cambridge Biomedical Campus, with the other half located in regional hospitals and general practices across the east of England.
+							</div>
+						</div>
+					</div>
+  				</div>
+  					<div class="column">
+    					<div class="card flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="https://media.beam.usnews.com/44/b8/553ef8b741de8641bcebeee63ad1/160624-university-of-toronto-submitted.jpg" alt="c3" style="width: 300px;height: 200px;">
+									Location
+								</div>
+								<div class="flip-card-back">
+									<br> The school is located alongside Addenbrooke's Hospital and other institutions in multiple buildings across the Cambridge Biomedical Campus.
+								</div>
+							</div>
+						
+									
+							</div>
+  				</div>
+  				<div class="column">
+    				<div class="card flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img src="https://www.hrw.org/sites/default/files/styles/embed_small/public/media_2020/09/202009americas_canada_universitytoronto.jpg?itok=EeBpZjZx" alt="c4" style="width: 300px;height: 200px">
+								Expertise
+							</div>
+							<div class="flip-card-back">
+								<br>Cambridge Assessment and Cambridge University Press have joined to form Cambridge University Press & Assessment, bringing together our expertise in research, teaching, learning and assessment.
+							</div>
+						</div>
+					</div>
+  				</div>
+			</div>
+
+			<h6>Doctor of Medicine</h6>
+
+			<ul id="admission" style="list-style-type: square; text-align: left; font-size: 30px;">
+				<p style="font-size:36px; margin-left: -18px; font-weight: bold;">University Admission Requirements
+				<p style="margin-top: 30px; font-size: 30px; margin-left: -20px;">Official Transcripts</p>
+				<li>GCSE Mathematics at grade C or above and GCSE English Language at grade C or above.</li>
+				<li>Applicants must have A Level Chemistry (normally passed at grade A or above within seven years of entry) and one of Biology/Human Biology, Physics, Mathematics (at A or AS level). </li>
+				<li>At least an upper second-class honors degree in any discipline.</li>
+				
+				
+				
+			</ul>
+			<h4 style="margin-top: 100px; text-align: left;">Fee Structure</h4>
+			<table>
+				<tr>
+				  <th>Criteria</th>
+				  <th>Fees</th>
+				</tr>
+				
+				<tr>
+				  <td>Purchase and maintenance of essential equipment</td>
+				  <td>Estimated cost £60</td>
+				</tr>
+				<tr>
+				  <td>Maximum travel costs for Year 1 and Year 3</td>
+				  <td>up to £25</td>
+				</tr>
+                <tr>
+                    <td>Textbooks at the start of Year 4</td>
+                    <td>Estimated cost £150 to £200</td>
+                  </tr>
+                  <tr>
+                    <td>Stethoscope </td>
+                    <td>		
+                        Estimated cost £60 to £100</td>
+                  </tr>
+				 
+			  </table>
+			</body>

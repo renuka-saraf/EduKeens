@@ -1,0 +1,241 @@
+<!doctype html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Yale University School of Medicine</title>
+		<link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/Yale_School_of_Medicine_logo.svg/225px-Yale_School_of_Medicine_logo.svg.png" type="image/icon type">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="usa-mbbs-2.css">
+		<script src="https://kit.fontawesome.com/47419e189a.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<nav>
+			<h1><img class="logo" src="https://i.pinimg.com/564x/db/e2/c5/dbe2c56936f8078dee2f41549afa60fb.jpg"> EduKeens</h1>
+			<ul>
+				<li><a href="page1.html">Home</a></li>
+				<li><a href="pag1.html">About</a></li>
+			</ul>
+		</nav>
+
+		<!--<h1><img class="image" src="https://www.cmu.edu/brand/brand-guidelines/images/seal-4c-600x600-min.jpg" width="120px" height="100px"><span>Carnegie Mellon University</span></h1>-->
+
+		<img class="image" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/Yale_School_of_Medicine_logo.svg/225px-Yale_School_of_Medicine_logo.svg.png" width="120px" height="100px"><span>&ensp;Yale School of Medicine
+
+		<div class="sidenav">
+			<ul>
+				<li class="title">Contents</li>
+				
+				<li><a href="#history">History</a></li>
+				<li><a href="#rankings">Rankings</a></li>
+				<li><a href="#campus">Campus</a></li>
+				<li><a href="#course">Courses</a></li>
+				<li><a href="#admission">Admission</a></li>
+
+			</ul>
+		</div>
+
+
+
+
+
+
+		<h2 class="subheading1">History of Yale</h2>
+		<div id="history" class="main">In 18th century United States, credentials were not needed to practice medicine. Prior to the founding of the medical school, Yale graduates would train through an apprenticeship in order to become physicians. Yale President Ezra Stiles conceived the idea of training physicians at Yale and ultimately, his successor Timothy Dwight IV helped to found the medical school.  </div>
+
+		
+
+		</div>
+		<h3 id = "rankings" class="h3" style="font-size: 36px;">Rankings: </h3>
+		<p class="h4" style="font-size: 32px;">According to the research:</p>
+		<ul style="list-style-type: square; text-align: left; font-size: 20px; margin-top: 50px;">
+			<div class="ranki" style="margin-left: 300px; font-size: 30px;">
+			<li >ranked No. 10 in Best Medical Schools: Research </li>
+			<li>#59
+                in
+                Best Medical Schools: Primary Care (tie)</li>
+			<li >Speciality in Anasthesiology and Internal Medicine</li>
+			<li >Ranked 48th, in most diverse schools </li>
+			
+		</ul>
+	</div>
+			
+		
+		
+
+
+		<h4 class="subheading2" >Campus of Yale School Of Medicine</h4>
+		<div id="campus" class="belowmain"> The majority of students live in New Haven, around the downtown area or medical school. Some opt to live in Harkness Dormitory, which is on the medical campus, and some choose to go a bit farther out to the East Rock neighborhood. <br><br><br>
+
+
+
+
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+					<!--<div class="text">One</div>-->
+					<img src="https://i.ytimg.com/vi/hWECLP_TrRg/maxresdefault.jpg" width="1000" height="600">
+			</div>
+			<div class="mySlides fade">
+					<!--<div class="text">Two</div>-->
+					<img src="https://ydn-wpengine.netdna-ssl.com/wp-content/uploads/2019/02/medschool_contributing-jeremy-uys.jpg" width="1000" height="600">
+			</div>
+			<div class="mySlides fade">
+					<!--<div class="text">Three</div>-->
+				<img src="https://i.pinimg.com/originals/96/7b/f9/967bf9cb9fad8ad2bb117ab1fd7eca80.jpg" width="1000" height="600">
+			</div>
+			<div class="mySlides fade">
+					<!--<div class="text">Three</div>-->
+				<img src="https://ysm-res.cloudinary.com/image/upload/c_fill,f_auto,q_auto:eco,w_1980/v1/websites4/live-prod/alumni/giving/YMS3011_0279_White_Coat-1_102771_13015_v6.jpg" width="1000" height="600">
+			</div>
+			<div class="mySlides fade">
+					<!--<div class="text">Three</div>-->
+				<img src="https://seas.yale.edu/sites/default/files/imce/depts/bme/M2.jpg" width="1000" height="600">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<div style="text-align:center">
+  			<span class="dot" onclick="currentSlide(1)"></span> 
+  			<span class="dot" onclick="currentSlide(2)"></span> 
+  			<span class="dot" onclick="currentSlide(3)"></span> 
+  			<span class="dot" onclick="currentSlide(4)"></span>
+  			<span class="dot" onclick="currentSlide(5)"></span>
+		</div>
+
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+  				showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+  					showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+  				var i;
+  				var slides = document.getElementsByClassName("mySlides");
+  				var dots = document.getElementsByClassName("dot");
+  				if (n > slides.length) {slideIndex = 1}
+  				if (n < 1) {slideIndex = slides.length}
+  				for (i = 0; i < slides.length; i++) {
+      				slides[i].style.display = "none";
+  				}
+  				for (i = 0; i < dots.length; i++) {
+      				dots[i].className = dots[i].className.replace(" active", "");
+  				}
+  				slides[slideIndex-1].style.display = "block";
+  				dots[slideIndex-1].className += " active";
+				}
+			</script>
+
+
+			<div class="belowmain">The mission statement of the Office of Admissions is to admit a diverse class of outstanding students who show the greatest promise for becoming creative leaders in medicine and science. With their broad range of experiences, backgrounds, knowledge and humanity, these students commit to improving the health and well-being of all people.</div><br><br><br>
+
+
+			<div class="row">
+  				<div class="column">
+    				<div class="card flip-card">
+    					<div class="flip-card-inner">
+    						<div class="flip-card-front">
+    							<img src="https://www.lsac.org/sites/default/files/legacy/images/default-source/llm-images/3987-02.jpg" alt="Avatar" style="width:300px;height:200px;">
+    							Multi-Diverse School
+    						</div>
+    						<div class="flip-card-back">
+    							<br>In 1861, Yale became the first university in America to award Doctor of Philosophy degrees. The University currently consists of fourteen constituent schools including the undergraduate liberal arts college, the Graduate school of Arts and Sciences 
+    						</div>
+    					</div>
+    				</div>
+  				</div>
+				  
+  				<div class="column">
+    				<div class="card flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img src="https://paonline.yale.edu/wp-content/uploads/sites/20/2020/09/YU-MED_Student_Page_Hero_Desktop_767_1.jpg" alt="c2" style="width:300px;height:200px;">
+								Alumni Network
+							</div>
+							<div class="flip-card-back">
+								<br>The University has graduated many notable alumni consisting of 61 Nobel laureates, 78 MacArthur Fellows, 247 Rhodes Scholars and 119 Marshall Scholars, 5 Fields Medalists and 3 Turing award winners.
+							</div>
+						</div>
+					</div>
+  				</div>
+  					<div class="column">
+    					<div class="card flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="https://images.shiksha.com/mediadata/images/1533554018phphfuWej_m.jpeg" alt="c3" style="width: 300px;height: 200px;">
+									Students
+								</div>
+								<div class="flip-card-back">
+									<br>In 2018, the University delivered teaching to 13,433 full-time and part-time students including 5,964 undergraduates and 7,469 graduate and professional students.
+								</div>
+							</div>
+						
+									
+							</div>
+  				</div>
+  				<div class="column">
+    				<div class="card flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img src="https://images.shiksha.com/mediadata/images/1514540975phpj66RrY_m.png" alt="c4" style="width: 300px;height: 200px">
+								Colonial college
+							</div>
+							<div class="flip-card-back">
+								<br>It is one of the nine Colonial Colleges chartered before the American Revolution and the third-oldest institution of higher education in the USA. 
+							</div>
+						</div>
+					</div>
+  				</div>
+			</div>
+
+			<h6>Doctor Of Medicine</h6>
+
+			<ul id="admission" style="list-style-type: square; text-align: left; font-size: 30px;">
+				<p style="font-size:36px; margin-left: -18px; font-weight: bold;">University Admission Requirements
+				<p style="margin-top: 30px; font-size: 30px; margin-left: -20px;">Official Transcripts</p>
+				<li>Attendance for three academic years, or the equivalent, at an accredited college, university, or institute of technology.</li>
+				<li>Satisfactory completion of the following courses, including laboratory work:</li>
+				<li>General Biology or Zoology (2 semesters)
+                </li>
+				<li>General Chemistry (2 semesters) and Organic Chemistry (1 year)
+                </li>
+				<li>Biochemistry (1 semester - laboratory recommended, but not required) and 
+                    General Physics (2 semesters)</li>
+				
+				
+			</ul>
+			<h4 style="margin-top: 100px; text-align: left;">Fee Structure</h4>
+			<table>
+				<tr>
+				  <th>Criteria</th>
+				  <th>Fees</th>
+				</tr>
+				
+				<tr>
+				  <td>Application Fees</td>
+				  <td>$110</td>
+				</tr>
+				<tr>
+				  <td>Activity Fees</td>
+				  <td>$2260</td>
+				</tr>
+                <tr>
+                    <td>Books and supplies</td>
+                    <td>$9760</td>
+                  </tr>
+                  <tr>
+                    <td>Total Fees</td>
+                    <td>$365394</td>
+                  </tr>
+				 
+			  </table>
+			</body>

@@ -1,0 +1,238 @@
+<!doctype html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Toronto University</title>
+		<link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Utoronto_coa.svg/330px-Utoronto_coa.svg.png" type="image/icon type">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="Canada_MBBS.css">
+		<script src="https://kit.fontawesome.com/47419e189a.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<nav>
+			<h1><img class="logo" src="https://i.pinimg.com/564x/db/e2/c5/dbe2c56936f8078dee2f41549afa60fb.jpg"> EduKeens</h1>
+			<ul>
+				<li><a href="page1.html">Home</a></li>
+				<li><a href="pag1.html">About</a></li>
+			</ul>
+		</nav>
+
+		<!--<h1><img class="image" src="https://www.cmu.edu/brand/brand-guidelines/images/seal-4c-600x600-min.jpg" width="120px" height="100px"><span>Carnegie Mellon University</span></h1>-->
+
+		<img class="image" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Utoronto_coa.svg/330px-Utoronto_coa.svg.png" width="120px" height="100px"><span>&ensp;University of Toronto
+
+		<div class="sidenav">
+			<ul>
+				<li class="title">Contents</li>
+				
+				<li><a href="#history">History</a></li>
+				<li><a href="#rankings">Rankings</a></li>
+				<li><a href="#campus">Campus</a></li>
+				<li><a href="#course">Courses</a></li>
+				<li><a href="#admission">Admission</a></li>
+
+			</ul>
+		</div>
+
+
+
+
+
+
+		<h2 class="subheading1">History of Toronto University</h2>
+		<div id="history" class="main">The University of Toronto (U of T or UToronto) is a public research university in Toronto, Ontario, Canada, located on the grounds that surround Queen's Park. It was founded by royal charter in 1827 as King's College, the first institution of higher learning in Upper Canada. Originally controlled by the Church of England, the university assumed its present name in 1850 upon becoming a secular institution. As a collegiate university, it comprises eleven colleges each with substantial autonomy on financial and institutional affairs and significant differences in character and history.  </div>
+
+		
+
+		</div>
+		<h3 id = "rankings" class="h3" style="font-size: 36px;">Rankings: </h3>
+		<p class="h4" style="font-size: 32px;">According to the research:</p>
+		<ul style="list-style-type: square; text-align: left; font-size: 20px; margin-top: 50px;">
+			<div class="ranki" style="margin-left: 300px; font-size: 30px;">
+			<li >QS World University Rankings:
+                26 </li>
+			<li>ranked #16 in Best Global Universities</li>
+			<li >among the top 20 schools in the world and first among Canadian schools by the Times Higher Education World Reputation/li>
+			<li > ranked 11th among the universities around the world by SCImago Institutions Rankings.</li>
+			
+		</ul>
+	</div>
+			
+		
+		
+
+
+		<h4 class="subheading2" >Campus of Toronto University</h4>
+		<div id="campus" class="belowmain"> At the University of Toronto, students, faculty and staff study, work and live on three campuses.There are three campuses to choose from –St. George, Mississauga, and Scarborough.With some of the most prestigious architecture and beautiful green space in the Greater Toronto Area and Mississauga, U of T offers an extraordinary environment in which to learn and work. 
+         <br><br><br>
+
+
+
+
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+					<!--<div class="text">One</div>-->
+					<img src="https://bdsmovement.net/sites/default/files/university%20of%20toronto.jpg" width="1000" height="600">
+			</div>
+			<div class="mySlides fade">
+					<!--<div class="text">Two</div>-->
+					<img src="https://student-ways.com/wp-content/uploads/2019/01/university_of_toronto.jpg" width="1000" height="600">
+			</div>
+			<div class="mySlides fade">
+					<!--<div class="text">Three</div>-->
+				<img src="https://img.emg-services.net/institutes/institute9950/uoft-header.jpg" width="1000" height="600">
+			</div>
+			<div class="mySlides fade">
+					<!--<div class="text">Three</div>-->
+				<img src="https://images.shiksha.com/mediadata/images/1533275387php2qgG0d.jpeg" width="1000" height="600">
+			</div>
+			<div class="mySlides fade">
+					<!--<div class="text">Three</div>-->
+				<img src="https://www.utoronto.ca/sites/default/files/cover-utm-hazel-mccallion-bldg.jpg" width="1000" height="600">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<div style="text-align:center">
+  			<span class="dot" onclick="currentSlide(1)"></span> 
+  			<span class="dot" onclick="currentSlide(2)"></span> 
+  			<span class="dot" onclick="currentSlide(3)"></span> 
+  			<span class="dot" onclick="currentSlide(4)"></span>
+  			<span class="dot" onclick="currentSlide(5)"></span>
+		</div>
+
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+  				showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+  					showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+  				var i;
+  				var slides = document.getElementsByClassName("mySlides");
+  				var dots = document.getElementsByClassName("dot");
+  				if (n > slides.length) {slideIndex = 1}
+  				if (n < 1) {slideIndex = slides.length}
+  				for (i = 0; i < slides.length; i++) {
+      				slides[i].style.display = "none";
+  				}
+  				for (i = 0; i < dots.length; i++) {
+      				dots[i].className = dots[i].className.replace(" active", "");
+  				}
+  				slides[slideIndex-1].style.display = "block";
+  				dots[slideIndex-1].className += " active";
+				}
+			</script>
+
+
+			<div class="belowmain">Admissions at the University of Toronto are moderately competitive with an average acceptance rate of 43%. The university aces in providing 700 UG programs in various disciplines and more than 300 graduate programs to study in Canada </div><br><br><br>
+
+
+			<div class="row">
+  				<div class="column">
+    				<div class="card flip-card">
+    					<div class="flip-card-inner">
+    						<div class="flip-card-front">
+    							<img src="https://indiaeducationdiary.in/wp-content/uploads/2020/09/UofT14466_20171018_UniversityofTorontoSign_001.jpg" alt="Avatar" style="width:300px;height:200px;">
+    							Rank
+    						</div>
+    						<div class="flip-card-back">
+    							<br>Good ranking and hence competitiveness amongst students
+    						</div>
+    					</div>
+    				</div>
+  				</div>
+				  
+  				<div class="column">
+    				<div class="card flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img src="https://images.squarespace-cdn.com/content/v1/521b88b9e4b024f66a58adf9/1439848022163-LR8TFIXTIT4QJ99YBNP8/6868008018_f298f018a5_o.jpg?format=1500w" alt="c2" style="width:300px;height:200px;">
+								Admission
+							</div>
+							<div class="flip-card-back">
+								<br>The registration for Fall Intake of PG programs starts in July and the deadline is between late August to December. 
+							</div>
+						</div>
+					</div>
+  				</div>
+  					<div class="column">
+    					<div class="card flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="https://media.beam.usnews.com/44/b8/553ef8b741de8641bcebeee63ad1/160624-university-of-toronto-submitted.jpg" alt="c3" style="width: 300px;height: 200px;">
+									Foundings
+								</div>
+								<div class="flip-card-back">
+									<br> It was founded by royal charter in 1827 as King's College, the first institution of higher learning in Upper Canada. 
+								</div>
+							</div>
+						
+									
+							</div>
+  				</div>
+  				<div class="column">
+    				<div class="card flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img src="https://www.hrw.org/sites/default/files/styles/embed_small/public/media_2020/09/202009americas_canada_universitytoronto.jpg?itok=EeBpZjZx" alt="c4" style="width: 300px;height: 200px">
+								Top University
+							</div>
+							<div class="flip-card-back">
+								<br>The University of Toronto was named the top Canadian university in the 2021 US News & World Report Best Global Universities Ranking, the 2021 Times Higher Education World University and 2020 World Reputation Rankings
+							</div>
+						</div>
+					</div>
+  				</div>
+			</div>
+
+			<h6>Doctor of Medicine</h6>
+
+			<ul id="admission" style="list-style-type: square; text-align: left; font-size: 30px;">
+				<p style="font-size:36px; margin-left: -18px; font-weight: bold;">University Admission Requirements
+				<p style="margin-top: 30px; font-size: 30px; margin-left: -20px;">Official Transcripts</p>
+				<li>MCAT:Threshold score of 125 in each section, with an allowance of 124 in one section.</li>
+				<li>GPA:3.6 </li>
+				<li>Degree:Completion of at least three years of undergraduate study (equivalent of 15 credits) towards a Canadian university bachelor's degree.</li>
+				
+				
+				
+			</ul>
+			<h4 style="margin-top: 100px; text-align: left;">Fee Structure</h4>
+			<table>
+				<tr>
+				  <th>Criteria</th>
+				  <th>Fees</th>
+				</tr>
+				
+				<tr>
+				  <td>	INCIDENTAL FEE*</td>
+				  <td>	$1,744.42</td>
+				</tr>
+				<tr>
+				  <td>	UNIVERSITY HEALTH INSURANCE PREMIUM</td>
+				  <td>$720</td>
+				</tr>
+                <tr>
+                    <td>		TUITION FEE (YEAR ONE) </td>
+                    <td>	$91,760</td>
+                  </tr>
+                  <tr>
+                    <td>Total Fees(one year) </td>
+                    <td>		
+                        $94,224.42</td>
+                  </tr>
+				 
+			  </table>
+			</body>
